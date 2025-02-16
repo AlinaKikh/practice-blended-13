@@ -26,11 +26,11 @@ document.querySelector('.form').addEventListener('submit', function (event) {
   
     promise
       .then(delay => {
-        alert(`✅ Fulfilled promise in ${delay}ms`),
+        window.alert(`✅ Fulfilled promise in ${delay}ms`),
         console.log(`✅ Fulfilled promise in ${delay}ms`)
 })
       .catch(delay => {
-        alert(`❌ Rejected promise in ${delay}ms`),
+        window.alert(`❌ Rejected promise in ${delay}ms`),
         console.log(`❌ Rejected promise in ${delay}ms`)
 });
   });
